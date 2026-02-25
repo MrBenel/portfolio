@@ -7,10 +7,10 @@ const projects = [
   {
     id: 1,
     title: "PulseFinance CM",
-    subtitle: "Application Mobile Fintech",
+    subtitle: "Application Fintech Hors-Ligne",
     description:
-      "Application mobile de gestion budgétaire et tontines 100% hors-ligne. Conçue pour les communautés camerounaises sans accès internet stable.",
-    tags: ["React Native", "SQLite", "Offline-First", "Tontines"],
+      "Application de gestion budgétaire et tontines 100% hors-ligne. Conçue pour les communautés camerounaises sans accès internet stable.",
+    tags: ["SQLite", "Offline-First", "Tontines", "Fintech"],
     icon: "💰",
     color: "from-blue-600 to-blue-900",
     accentColor: "#4f8ef7",

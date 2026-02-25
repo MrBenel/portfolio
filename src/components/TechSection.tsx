@@ -26,14 +26,14 @@ const techStack = [
     ],
   },
   {
-    category: "Développement Mobile",
+    category: "Visualisation & Reporting",
     color: "#a855f7",
-    icon: "📱",
+    icon: "📊",
     tools: [
-      { name: "React Native", level: 78, icon: "⚛️" },
-      { name: "JavaScript", level: 80, icon: "🟨" },
-      { name: "TypeScript", level: 72, icon: "🔷" },
-      { name: "Expo", level: 75, icon: "📦" },
+      { name: "Power BI", level: 85, icon: "📊" },
+      { name: "Matplotlib", level: 82, icon: "📉" },
+      { name: "Seaborn", level: 80, icon: "🎨" },
+      { name: "Tableau", level: 72, icon: "📋" },
     ],
   },
 ];
@@ -269,9 +269,9 @@ export default function TechSection() {
               <div className="flex flex-wrap gap-2">
                 {[
                   "Python", "Pandas", "Scikit-Learn", "XGBoost",
-                  "SQL", "SQLite", "Power BI", "React Native",
-                  "JavaScript", "TypeScript", "Git", "Jupyter",
-                  "NumPy", "Matplotlib", "Seaborn", "FastAPI",
+                  "SQL", "PostgreSQL", "Power BI", "Tableau",
+                  "NumPy", "Matplotlib", "Seaborn", "Jupyter",
+                  "Git", "FastAPI", "TensorFlow", "Statsmodels",
                 ].map((tool, i) => (
                   <motion.span
                     key={tool}
