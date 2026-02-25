@@ -7,7 +7,13 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#050d1a",
+        color: "#e2e8f0",
+      }}
+    >
       <Navbar />
       <HeroSection />
 

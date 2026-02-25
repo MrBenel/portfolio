@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     "ENSPY",
     "Polytechnique Yaoundé",
     "Python",
-    "React Native",
     "Power BI",
     "Humanités Numériques",
     "Afrique numérique",
@@ -49,6 +48,11 @@ export default function RootLayout({
     <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundColor: "#050d1a",
+          color: "#e2e8f0",
+          minHeight: "100vh",
+        }}
       >
         {children}
       </body>

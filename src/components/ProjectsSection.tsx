@@ -18,7 +18,7 @@ const projects = [
       { label: "Mode hors-ligne", value: "100%" },
       { label: "Sécurité", value: "AES-256" },
     ],
-    size: "col-span-12 md:col-span-7",
+    gridClass: "bento-card-large-left",
     featured: true,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       { label: "Précision", value: "87%" },
       { label: "Modèle", value: "XGBoost" },
     ],
-    size: "col-span-12 md:col-span-5",
+    gridClass: "bento-card-small-right",
     featured: false,
   },
   {
@@ -52,7 +52,7 @@ const projects = [
       { label: "Réduction stocks", value: "-23%" },
       { label: "Ventes +", value: "+18%" },
     ],
-    size: "col-span-12 md:col-span-5",
+    gridClass: "bento-card-small-left",
     featured: false,
   },
   {
@@ -69,7 +69,7 @@ const projects = [
       { label: "Ruptures évitées", value: "94%" },
       { label: "Données", value: "RGPD ✓" },
     ],
-    size: "col-span-12 md:col-span-7",
+    gridClass: "bento-card-large-right",
     featured: true,
   },
 ];
@@ -96,7 +96,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
   return (
     <motion.div
       variants={cardVariants}
-      className={`${project.size} relative rounded-2xl overflow-hidden cursor-pointer group`}
+      className={`${project.gridClass} relative rounded-2xl overflow-hidden cursor-pointer group`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}

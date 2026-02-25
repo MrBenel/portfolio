@@ -140,16 +140,36 @@
   animation: shimmer 4s linear infinite;
 }
 
-/* Bento grid */
+/* Bento grid — responsive layout */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .bento-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 7fr 5fr;
+  }
+
+  /* Card 1: large left (7/12) */
+  .bento-card-large-left {
+    grid-column: 1 / 2;
+  }
+
+  /* Card 2: small right (5/12) */
+  .bento-card-small-right {
+    grid-column: 2 / 3;
+  }
+
+  /* Card 3: small left (5/12) */
+  .bento-card-small-left {
+    grid-column: 1 / 2;
+  }
+
+  /* Card 4: large right (7/12) */
+  .bento-card-large-right {
+    grid-column: 2 / 3;
   }
 }
 

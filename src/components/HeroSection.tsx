@@ -14,7 +14,7 @@ const fadeUp: Variants = {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden" style={{ backgroundColor: "#050d1a", paddingTop: "4rem" }}>
       {/* Background orbs */}
       <div className="orb orb-blue w-[600px] h-[600px] -top-40 -left-40 pointer-events-none" />
       <div className="orb orb-green w-[500px] h-[500px] -bottom-20 -right-20 pointer-events-none" />
