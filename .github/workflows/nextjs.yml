@@ -15,8 +15,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -34,19 +33,11 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
-
       - name: Install dependencies
         run: bun install
 
       - name: Build with Next.js
         run: bun next build
-
-      - name: Copy .nojekyll to out directory
-        run: cp .nojekyll out/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
