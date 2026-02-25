@@ -13,8 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "BALALE TCHATCHOUA BENEL — Data Scientist & Ingénieur Humanités Numériques",
+  description:
+    "Portfolio professionnel de BALALE TCHATCHOUA BENEL, élève ingénieur à l'ENSPY (Polytechnique Yaoundé). Spécialiste Data Science, Machine Learning et protection des données (RGPD) pour l'économie numérique africaine.",
+  keywords: [
+    "Data Science",
+    "Machine Learning",
+    "RGPD",
+    "Cameroun",
+    "ENSPY",
+    "Polytechnique Yaoundé",
+    "Python",
+    "React Native",
+    "Power BI",
+    "Humanités Numériques",
+    "Afrique numérique",
+  ],
+  authors: [{ name: "BALALE TCHATCHOUA BENEL" }],
+  creator: "BALALE TCHATCHOUA BENEL",
+  openGraph: {
+    title: "BALALE TCHATCHOUA BENEL — Data Scientist",
+    description:
+      "Transformer les données en décisions stratégiques pour l'économie numérique africaine.",
+    type: "website",
+    locale: "fr_FR",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
