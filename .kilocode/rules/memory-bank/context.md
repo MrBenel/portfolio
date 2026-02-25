@@ -94,3 +94,6 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-02-25 | Portfolio BALALE BENEL créé (Hero, Projects, RGPD, Tech, Footer, Privacy page) |
+| 2026-02-25 | Fix fond dark: backgroundColor #050d1a forcé en style inline sur body/main/sections |
+| 2026-02-25 | Fix responsive: bento-grid CSS natif (7fr/5fr) + classes bento-card-* au lieu de Tailwind col-span |
